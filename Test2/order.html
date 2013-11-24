@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="img/logo2.png">
+		<link rel="stylesheet" type="text/css" href="css/styles2.css">
+		<meta name="author" content="kleinm3">
+		<title>Dawg Pizza</title>
+		<!-- hot link to Bootstrap stylesheet -->
+		    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		    <!-- hot links to Bootstrap JavaScript and jQuery (required by Bootstrap) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>	
+
+
+		    <!-- auto-play the carousel -->
+		    <script>
+		        $('.carousel').carousel();
+		    </script>
+		    <script type="text/javascript" src="js/menu.js"></script>
+		    <script type="text/javascript" src="js/create.js"></script>
+
+		    <script src="lib/jquery-2.0.3/jquery-2.0.3.min.js"></script>
+
+        <!-- our own JavaScript files -->
+        <script src="js/utils.js"></script>
+        <script src="js/events.js"></script>
+        <script src="js/models.js"></script>
+        <script src="js/views.js"></script>
+        <script src="js/movies.js"></script>
+        <script src="js/movieView.js"></script>
+        <script src="js/moviesView.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/cartItemView.js"></script>
+        <script src="js/cartView.js"></script>
+        <script src="js/controller.js"></script>
+	</head>
+
+	<body>
+		<div class="background">
+			<div class="box">	
+				<div class="container">
+					<div id="topSection">
+						<div><a href="index2.html"><img class="logo" src="img/logo2.png" alt="Dawg Pizza Logo"></a></div>
+
+						
+						<div class="nav nav-pills">
+							<div class="pills">
+								<p class="pill"><a href="index2.html">Home</a></p>
+								<p class="pill"><a href="menu.html">Menu</a></p>
+								<p class="pill"><a href="about.html">About</a></p>
+								<p class="pill"><a href="order.html">Order</a></p>
+							</div>
+						</div>
+					</div>
+
+							<!-- <div class="col-md-4"> -->
+						<nav class="navbar navbar-default" role="navigation">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				      				<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#">Dawg Pizza</a>
+							</div>
+								
+							<div class="collapse navbar-collapse navbar-ex1-collapse">
+								<ul class="nav navbar-nav">
+								    <li><a href="index2.html">Home</a></li>
+								    <li><a href="menu.html">Menu</a></li>
+								     <li><a href="about.html">About</a></li>
+								     <li><a href="order.html">Order</a></li>
+								</ul>
+							</div>
+						</nav>
+
+						<div>
+							<p class="deliveryTime">Delivery is only within Seattle city limits</p>
+							<p class="deliveryTime">Noon - 11pm</p>
+							<p class="deliveryTime">Cash or Credit</p>
+						</div>
+
+						<footer class="footer">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="https://twitter.com/DawgPizzaSea" class="twitter-follow-button" data-show-count="false">Follow @DawgPizzaSea</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+								<p>Call us for delivery: 206-555-1212</p>
+								<p>&copy;2013 Mitchell Klein</p>
+						</div>	
+
+							<div class="col-md-4">
+								<p>Business Hours: <br>10:00 am to 11:00pm<br>	Monday through Saturday</p>
+							</div>
+
+
+						<div class="col-md-4">
+							<h6 class="call">(206)555-1212<br>
+								<a href="http://goo.gl/maps/qzc5T">4306 University Way NE<br>Seattle, WA 98105<br></a><a href="mailto:dawgpizzaseattle@gmail.com">dawgpizzaseattle@gmail.com</a></h6>
+							</div>
+						</div>
+				</footer>
+			</div>	
+		</div>
+	</div>
+	<div class="container">
+
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">
+                    <h2>Your Cart</h2>
+                    <div class="cart-items-container"></div>
+                    <div class="cart-footer">
+                        <div class="row total-row">
+                            <div class="col-xs-10">
+                                Total:
+                            </div>
+                            <div class="col-xs-2">
+                                $<span class="total-price"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 button-row">
+                                <button type="button" class="btn btn-primary place-order">Place My Order</button>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-8 col-md-pull-4">
+                    <div class="movies-container"></div>
+                    <div class="menus-container"></div>        
+                </div>
+            </div>
+
+        </div> <!-- .container -->
+
+        <div class="templates">
+
+            <!-- movie template -->
+            <div class="movie-template movie clearfix">
+
+                <img class="pic" src="" alt="">
+                <h2 class="title"></h2>
+
+                <p class="format-template">
+                    <button type="button" class="btn btn-default add-to-cart">
+                        Buy on <img src="" alt="logo for format" class="format-logo"> 
+                        for $<span class="format-price"></span>
+                    </button>
+                </p>
+
+            </div>
+
+
+            <!-- menu template -->
+            <div class="menu-template pizza clearfix">
+
+                <h2 class="title"></h2>
+
+                <p class="format-template">
+                    <button type="button" class="btn btn-default add-to-cart">
+                        Buy <span class="format-size"></span>
+                        for $<span class="format-price"></span>
+                    </button>
+                </p>
+
+            </div>
+
+   
+
+            <!-- cart item template -->
+            <div class="cart-item-template cart-item row">
+                <div class="col-xs-10">
+                    <p><button type="button" class="btn btn-default btn-xs remove-item">&times;</button> 
+                        <span class="name"></span> <span class="type"></span> (<span class="size"></span>)
+                    </p>
+                </div>
+                <div class="col-xs-2 col-price">
+                    <p>$<span class="price"></span></p>
+                </div>
+            </div>
+
+        </div> <!-- .templates -->
+        
+        
+    </body>
+  </html>  
+
+
+

@@ -1,0 +1,275 @@
+@import url(http://fonts.googleapis.com/css?family=Slackey);
+@import url(http://fonts.googleapis.com/css?family=Andika);
+@import url(reset.css);
+
+         
+.background {
+	background-color: #2B2B2B;
+	font-family: 16px; 
+	font-family: sans-serif;
+}
+
+.main-pagebox {
+	background-color: #2B2B2B;
+	margin: 0 auto; /*Horizontal centering*/
+	box-shadow: 1px 1px 3px;
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 991px) {
+	.nav-pills {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 991px) {
+	.navbar,
+	.navbar-header {
+		display: none; 
+	}
+}
+
+.pill {
+	display: inline-block;
+	margin-left: 10%; 
+	margin-top: 1.6em;
+
+}
+
+p a {
+	font-family:'Andika', sans-serif;
+	font-size: 25px; 
+	color: white;
+	padding: 4px;
+}
+
+p a:visited,
+p a:link {
+	text-decoration: none; 
+}
+
+p a:hover {
+	background-color: black;
+	color: white;
+	border-radius: 10px; 
+}
+
+.navbar-ex1-collapse {
+	background-color: #DCDCE6;
+	border-radius: 10px;
+}
+
+:focus {
+	background-color: #000; 
+	border-style: solid;
+	border-color: green;
+	border-width: 1px;
+}
+
+#mainpic {
+	margin: 0 auto;
+}
+
+.img-responsive {
+	position: relative;
+}
+
+.logo {
+	height: 5em;
+	width: 14em;
+	max-width: 80%;
+	margin-left: 10%;
+	float:left;     
+}
+
+.logo:hover {
+	opacity: 1.0;
+}
+
+.box3 {
+	background-color: #2B2B2B;
+	max-width: 90%;
+	border-radius: 5px;
+	margin-left: 5%;
+}
+
+.price {
+	font-style: italic;
+}
+
+.pizza {
+	max-width: 90%;
+	text-align: center;
+	margin: 2.5%;
+	border-radius: 10px;
+}
+
+
+.frontPizzaFont {
+	color: white; 
+	font-size: 18px; 
+	text-align: center;
+	margin-top: 2em;
+}
+
+.frontPizzaFont:hover {
+	opacity: 1.0;
+}
+
+.hotstuffbox {
+	margin: 5%;
+	background-color: #2B2B2B;
+	width: 90%;
+	max-height: 475px;
+}
+
+.hot {
+	font-family:'Slackey', sans-serif;
+	color: #EF3736;
+	text-align: center;
+}
+
+.text {
+	text-align: center;
+	color: white;
+}
+
+
+h1 {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.breadsticks {
+	max-width: 80%;
+	border-radius: 5px;
+	margin-left: 7.5%;
+	margin-right: 5%;
+	text-align: center;
+}
+
+.youtube {
+	max-width: 80%;
+	width: 640px;
+	height: 390px; 
+	margin-left: 15%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.footer {
+	margin-top: 4em;
+	border-top-style: solid;
+	border-top-width: 1px; 
+	border-top-color: black;  
+	color: white;  
+}
+
+
+/*Menu*/
+
+.menu {
+	font-family: 'Andika', sans-serif;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: .5em;
+	color: white;
+}
+
+.types {
+	font-family: sans-serif;
+	font-size: 26px;
+	text-align: center;
+	color: white;
+}
+
+.sizes {
+	text-align: center;
+	color: white;
+}
+
+.pic {
+	max-width: 85%;
+	border-radius: 10px; 
+	margin-left: 7.5%;
+	margin-bottom: 1em;
+}
+
+.menuPic {
+	max-width: 90%;
+	margin: 5%;
+	border-radius: 10px;
+}
+
+#drinkSection,
+#dessertSection {
+	color: white;
+}
+
+.item {
+	color: white; 
+	font-weight: bold; 
+	font-family: 'Andika', sans-serif;
+	margin-bottom: .5em; 
+}
+
+.meat {
+	text-decoration: underline; 
+	font-style: italic; 
+	margin-bottom: .2em;
+	color: white;
+}
+
+.ing {
+	margin-bottom: 1em;
+	color: white; 
+}
+
+#drinkSection,
+#dessertSection {
+font-family: sans-serif;
+font-size: 18px;
+font-weight: lighter;
+}
+
+/*About*/
+
+.aboutdp {
+	text-align: center;
+	color: white;
+}
+
+.twitter {
+	max-width: 25px;
+}
+
+.call {
+	font-family: sans-serif;
+	font-size: 14px; 
+}
+
+.aboutheading,
+.aboutparagraph {
+	color: white;
+	margin-left: 2.5%;
+}
+
+#number {
+	color: #68298E;
+	font-size: 26px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.contact {
+	margin-left: 5%;
+}
+
+/* Order */
+.deliveryTime {
+	font-size: 20px;
+	font-weight: bold; 
+	color: #FFF;
+}
